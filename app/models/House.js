@@ -18,13 +18,13 @@ export class House {
     <div class="container-fluid">
     <section class="row">
       <div class="col-10">
-        <section class="row">
+        <section class="row elevation-5">
           <div class="col-6">
           <img class="img-fluid car-img"
             src="${this.img}"
             alt="${this.make} ${this.model}">
           </div>
-          <div class="col-6">
+          <div class="col-6 p-4 text-center">
             <section class="row">
               <div class="col-6">
                 <h2>Price $${this.price}</h2>
