@@ -17,7 +17,7 @@ export class House {
     return `
     <div class="container-fluid">
     <section class="row">
-      <div class="col-10">
+      <div class="col-10 m-auto">
         <section class="row elevation-5">
           <div class="col-6">
           <img class="img-fluid car-img"
