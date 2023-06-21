@@ -10,7 +10,7 @@ export class House {
     this.sqft = data.sqft
     this.price = data.price
     this.description = data.description
-    this.imgUrl = data.imgUrl
+    this.img = data.img
   }
 
   get HouseTemplate() {
@@ -20,9 +20,9 @@ export class House {
       <div class="col-10">
         <section class="row">
           <div class="col-6">
-            <img class="img-fluid"
-              src="${this.imgUrl}"
-              alt="house">
+          <img class="img-fluid car-img"
+            src="${this.img}"
+            alt="${this.make} ${this.model}">
           </div>
           <div class="col-6">
             <section class="row">
@@ -35,6 +35,7 @@ export class House {
                 <h5>SQ FT ${this.sqft}"</h5>
                 <h6>Year ${this.year}</h6>
                 <p class="">${this.description}</p>
+                <button onclick="app.HousesController.deleteHome('${this.id}')" class="btn btn-danger mt-2">Delete House</button>
               </div>
             </section>
           </div>
